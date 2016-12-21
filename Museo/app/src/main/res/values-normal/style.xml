@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorBlanco</item>
+
+    </style>
+
+
+    <!-- estilos necesarios para la la barra de tareas -->
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="ActionBarText" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+</resources>
