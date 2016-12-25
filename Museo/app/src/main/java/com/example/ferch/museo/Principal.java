@@ -13,9 +13,27 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Button;
+import android.content.Intent;
 
 public class Principal extends BasicActivity{
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_principal);
 
+        Button btn1 = (Button)findViewById(R.id.btn1);
+
+        //--- BOTON QUE REDIRECCIONA A OTRA ACTIVIDAD--//
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btnIntent = new Intent (Principal.this, waitingActivity.class);
+                startActivity(btnIntent);
+            }
+        });
+        //---END BOTON---//
+    }
 
 }

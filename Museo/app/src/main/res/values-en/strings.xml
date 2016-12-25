@@ -7,4 +7,7 @@
 
     <!-- string de la barra de tareas-->
     <string name="fgc_bar">FCG</string>
+
+    <string name="waiting_message">Acérquese a un atractivo de museo y acerque el móvil para activar la narración automática del contenido.</string>
+    <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
 </resources>
