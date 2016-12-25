@@ -2398,6 +2398,14 @@
       <option name="presentableId" value="Default" />
       <updated>1482363684719</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ventana de espera para dispositivo.">
+      <created>1482688377474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1482688377482</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
