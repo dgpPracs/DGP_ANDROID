@@ -24,6 +24,7 @@ public class Principal extends BasicActivity{
         setContentView(R.layout.activity_principal);
 
         Button btn1 = (Button)findViewById(R.id.btn1);
+        Button btn2 = (Button)findViewById(R.id.btn2);
 
         //--- BOTON QUE REDIRECCIONA A OTRA ACTIVIDAD--//
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,13 @@ public class Principal extends BasicActivity{
             public void onClick(View view) {
                 Intent btnIntent = new Intent (Principal.this, waitingActivity.class);
                 startActivity(btnIntent);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btnIntent2 = new Intent (Principal.this, FirstSettings.class);
+                startActivity(btnIntent2);
             }
         });
         //---END BOTON---//
