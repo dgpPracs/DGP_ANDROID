@@ -40,6 +40,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:text="@string/waiting_icon_desc"
         android:layout_weight="2"
         android:textColor="?android:attr/textColorTertiaryInverse"
@@ -50,7 +51,8 @@
         android:layout_height="0dp"
         android:layout_width="fill_parent"
         android:layout_weight="5"
-        app:srcCompat="@mipmap/ic_waiting_sensor" />
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@mipmap/ic_waiting_signal" />
 
 
 
