@@ -14,13 +14,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_zone.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_zone.xml" />
     </list>
     <ignored path="Museo.iws" />
@@ -57,11 +53,13 @@
       <file leaf-file-name="Principal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            <state relative-caret-position="221">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
               <folding>
                 <element signature="e#633#879#0" expanded="true" />
                 <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#915#1162#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,24 +100,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_zone.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_zone.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_zone.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="319">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZoneActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZoneActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1834,9 +1832,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/waitingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_waiting.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_zone.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_zone.xml" />
       </list>
     </option>
   </component>
@@ -1975,7 +1973,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
-    <property name="device.picker.selection" value="240995bc3599" />
+    <property name="device.picker.selection" value="emulator-5554" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
@@ -2333,7 +2331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482939851871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Corrigiendo error :s">
+      <created>1482941548578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1482941548578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2342,7 +2347,7 @@
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45904437" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1109215" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2351,7 +2356,7 @@
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45904437" sideWeight="0.49389312" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1109215" sideWeight="0.49389312" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2389,7 +2394,8 @@
     <MESSAGE value="Ventana de bienvenida!" />
     <MESSAGE value="Correcciones :(" />
     <MESSAGE value="CardView" />
-    <option name="LAST_COMMIT_MESSAGE" value="CardView" />
+    <MESSAGE value="Corrigiendo error :s" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigiendo error :s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2403,6 +2409,8 @@
           <folding>
             <element signature="e#633#879#0" expanded="true" />
             <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#915#1162#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2468,6 +2476,8 @@
           <folding>
             <element signature="e#633#879#0" expanded="true" />
             <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#915#1162#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2593,9 +2603,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="544">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding>
+            <element signature="e#633#879#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#915#1162#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2604,27 +2635,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/Principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
-          <folding>
-            <element signature="e#633#879#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ferch/museo/ZoneActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
           <folding />
         </state>
       </provider>
