@@ -25,7 +25,7 @@
                 android:value="com.example.ferch.museo.BasicActivity" />
         </activity>
         <activity
-            android:name=".waitingActivity"
+            android:name=".WaitingActivity"
             android:parentActivityName=".BasicActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".FirstSettings" />

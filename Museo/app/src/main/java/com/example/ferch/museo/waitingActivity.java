@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 
-public class waitingActivity extends BasicActivity {
+public class WaitingActivity extends BasicActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
