@@ -25,13 +25,16 @@ public class Principal extends BasicActivity{
                 startActivity(btnIntent);
             }
         });
+
+        /*
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent btnIntent2 = new Intent (Principal.this, ZoneActivity.class);
                 startActivity(btnIntent2);
             }
-        });
+        });*/
+
         //---END BOTON---//
     }
 }
