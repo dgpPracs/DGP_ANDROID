@@ -21,7 +21,7 @@ public class Principal extends BasicActivity{
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnIntent = new Intent (Principal.this, waitingActivity.class);
+                Intent btnIntent = new Intent (Principal.this, FirstSettings.class);
                 startActivity(btnIntent);
             }
         });/*

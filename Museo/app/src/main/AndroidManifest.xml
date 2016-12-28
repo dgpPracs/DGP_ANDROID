@@ -27,8 +27,9 @@
         <activity
             android:name=".waitingActivity"
             android:parentActivityName=".BasicActivity"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".FirstSettings"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FirstSettings" />
+        <activity android:name=".ZoneActivity"></activity>
     </application>
 
 </manifest>

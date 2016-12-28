@@ -15,4 +15,5 @@ public class waitingActivity extends BasicActivity {
         setContentView(R.layout.activity_waiting);
         super.añadirBarra(R.layout.activity_waiting);
     }
+    
 }
