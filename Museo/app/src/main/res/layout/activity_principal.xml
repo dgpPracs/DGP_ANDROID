@@ -8,40 +8,45 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include
-        layout="@layout/app_bar_principal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/nav_view"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="100dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_centerHorizontal="true"
-            android:text="Iniciar"/>
+        <include
+            layout="@layout/app_bar_principal"
+            android:id="@+id/include2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="100dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:text="Setting"/>
+            android:gravity="center"
+            android:layout_below="@+id/include2">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Setting"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Iniciar"
+                android:elevation="0dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>
