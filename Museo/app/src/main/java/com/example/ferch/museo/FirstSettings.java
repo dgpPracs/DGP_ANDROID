@@ -1,6 +1,7 @@
 package com.example.ferch.museo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -16,6 +17,8 @@ import android.widget.ViewSwitcher.ViewFactory;
 
 public class FirstSettings extends BasicActivity {
 
+    SharedPreferences sharedPreferences;
+
     private static ImageButton nextLang;
     private static ImageButton prevLang;
     private static TextSwitcher swchLanguage;
@@ -26,7 +29,9 @@ public class FirstSettings extends BasicActivity {
 
     // ********** LANGUAGES ***********
     // String array to be shown on textSwitcher
-    String languages[] = { "Español", "English",
+
+    //CharSequence spanish = getResources().getString(R.string.spanish);
+    CharSequence languages[] = { "Español", "English",
             "Alemán", "Francés", "Italiano" };
     // Total length of the string array
     int cantLanguages = languages.length;
@@ -47,6 +52,8 @@ public class FirstSettings extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_settings);
+        showMessage(getResources().getString(R.string.spanish));
+
         // Call all the methods
         init();
         loadAnimations("right", swchLanguage);
@@ -141,6 +148,7 @@ public class FirstSettings extends BasicActivity {
         btnGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent btnIntent = new Intent (FirstSettings.this, WaitingActivity.class);
                 startActivity(btnIntent);
             }
@@ -160,7 +168,4 @@ public class FirstSettings extends BasicActivity {
             }
         });
     }
-
-
-
 }

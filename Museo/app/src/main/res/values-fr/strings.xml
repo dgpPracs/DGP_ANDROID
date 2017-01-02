@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Museo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">hola black frangment</string>
 
     <!-- string de la barra de tareas-->
     <string name="fgc_bar">FCG</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_principal">Principal</string>
+
+    <string name="welcome_message">Bienvenido al Museo Caja Granada</string>
+    <string name="select_language">¿Cuál es su idioma?: </string>
+    <string name="select_feature">Optimizar la aplicación para: </string>
+    <string name="waiting_message">La narración automática empezará cuando el móvil esté cerca a una colección expuesta en el museo.</string>
+    <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
+
+    <!-- string eleccion de idiomas-->
+    <string name="spanish"></string>
+    <string name="english"></string>
+    <string name="french"></string>
+    <string name="german"></string>
+    <string name="italian"></string>
+
+    <!-- string eleccion de caracteristicas-->
+    <string name="nothing"></string>
+    <string name="eldery"></string>
+    <string name="blind"></string>
+    <string name="deaf"></string>
+
 </resources>

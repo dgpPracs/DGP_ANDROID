@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- <string name=""></string> -->
     <string name="app_name">Museo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -19,4 +21,18 @@
     <string name="select_feature">Optimizar la aplicación para: </string>
     <string name="waiting_message">La narración automática empezará cuando el móvil esté cerca a una colección expuesta en el museo.</string>
     <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
+
+    <!-- string eleccion de idiomas-->
+    <string name="spanish">Español</string>
+    <string name="english">Ingles</string>
+    <string name="french">Frances</string>
+    <string name="german">Aleman</string>
+    <string name="italian">Italiano</string>
+
+    <!-- string eleccion de caracteristicas-->
+    <string name="nothing">Ninguna</string>
+    <string name="eldery"> Persona mayor</string>
+    <string name="blind">Discapacidad visual</string>
+    <string name="deaf">Discapacidad auditiva</string>
+
 </resources>
