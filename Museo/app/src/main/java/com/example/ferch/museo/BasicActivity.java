@@ -2,18 +2,26 @@ package com.example.ferch.museo;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class BasicActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    protected SharedPreferences sharedPreferences;
 
     protected void añadirBarra(int actualLayout){
 
@@ -98,5 +106,41 @@ public class BasicActivity extends AppCompatActivity implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
+    }
+
+    protected void setLanguage(){
+
+        sharedPreferences = getSharedPreferences("VALUES",MODE_PRIVATE);
+        int lang = sharedPreferences.getInt("LANG",2);
+
+        switch (lang){
+            case 0: setLocale("fr");
+                break;
+            case 1: setLocale("de");
+                break;
+            case 2: setLocale("it");
+                break;
+            case 3: setLocale("en");
+                break;
+            case 4: setLocale("es");
+                break;
+        }
+    }
+
+    public void setLocale(String lang) {
+        Locale myLocale = new Locale(lang);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, this.getClass());
+        startActivity(refresh);
+        finish();
+    }
+
+    protected void factory(){
+
+
     }
 }

@@ -9,9 +9,15 @@ public class Principal extends BasicActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
+        //super.setLanguage();
+        super.onCreate(savedInstanceState);
         super.añadirBarra(R.layout.activity_principal);
+        this.firstRun();
+
+        sharedPreferences = getSharedPreferences("VALUES",MODE_PRIVATE);
+        int lang = sharedPreferences.getInt("LANG",2);
+        showMessage(lang+"");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         Button btn1 = (Button)findViewById(R.id.btn1);
@@ -35,5 +41,21 @@ public class Principal extends BasicActivity{
         });
 
         //---END BOTON---//
+    }
+
+    private void firstRun(){
+
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);
+
+        //para ver si se ha ejecutado por primera vez o no y mostrar esta activity o mostrar la del tutorial
+        if (isFirstRun) {
+            //show start activity
+
+            startActivity(new Intent(Principal.this, FirstSettings.class));
+            super.showMessage("first run");
+        }
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                .putBoolean("isFirstRun", false).apply();
     }
 }

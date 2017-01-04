@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- <string name=""></string> -->
     <string name="app_name">Museo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -27,16 +28,16 @@
     <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
 
     <!-- string eleccion de idiomas-->
-    <string name="spanish"></string>
-    <string name="english"></string>
-    <string name="french"></string>
-    <string name="german"></string>
-    <string name="italian"></string>
+    <string name="spanish">Español</string>
+    <string name="english">Ingles</string>
+    <string name="french">Frances</string>
+    <string name="german">Aleman</string>
+    <string name="italian">Italiano</string>
 
     <!-- string eleccion de caracteristicas-->
-    <string name="nothing"></string>
-    <string name="eldery"></string>
-    <string name="blind"></string>
-    <string name="deaf"></string>
+    <string name="nothing">Ninguna</string>
+    <string name="eldery"> Persona mayor</string>
+    <string name="blind">Discapacidad visual</string>
+    <string name="deaf">Discapacidad auditiva</string>
 
 </resources>

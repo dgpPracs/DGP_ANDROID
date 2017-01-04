@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Museum</string>
+
+    <string name="app_name">Museo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">hola black frangment</string>
+
+    <!-- strings actividad Principal -->
+
+    <string name="btStart">Start</string>
+    <string name="btSetting">Settings</string>
 
     <!-- string de la barra de tareas-->
     <string name="fgc_bar">FCG</string>
 
-    <string name="waiting_message">Acérquese a un atractivo de museo y acerque el móvil para activar la narración automática del contenido.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_principal">Principal</string>
+
+    <string name="welcome_message">Bienvenido al Museo Caja Granada</string>
+    <string name="select_language">¿Cuál es su idioma?: </string>
+    <string name="select_feature">Optimizar la aplicación para: </string>
+    <string name="waiting_message">La narración automática empezará cuando el móvil esté cerca a una colección expuesta en el museo.</string>
     <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
+
+    <!-- string eleccion de idiomas-->
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="italian">Italian</string>
+
+    <!-- string eleccion de caracteristicas-->
+    <string name="nothing">Nothing</string>
+    <string name="eldery">Eldery</string>
+    <string name="blind">Blind</string>
+    <string name="deaf">Deaf</string>
+
 </resources>
