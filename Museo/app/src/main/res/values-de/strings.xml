@@ -6,6 +6,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">hola black frangment</string>
 
+    <!-- strings actividad Principal -->
+
+    <string name="btStart">Iniciar</string>
+    <string name="btSetting">Ajustes</string>
+
     <!-- string de la barra de tareas-->
     <string name="fgc_bar">FCG</string>
 

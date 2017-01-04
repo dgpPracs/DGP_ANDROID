@@ -6,6 +6,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">hola black frangment</string>
 
+    <!-- strings actividad Principal -->
+
+    <string name="btStart">Start</string>
+    <string name="btSetting">Settings</string>
+
     <!-- string de la barra de tareas-->
     <string name="fgc_bar">FCG</string>
 
@@ -22,16 +27,16 @@
     <string name="waiting_icon_desc">Identifique las zonas de narración automática con este símbolo: </string>
 
     <!-- string eleccion de idiomas-->
-    <string name="spanish">spanish</string>
-    <string name="english">english</string>
-    <string name="french">french</string>
-    <string name="german">german</string>
-    <string name="italian">italian</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="italian">Italian</string>
 
     <!-- string eleccion de caracteristicas-->
-    <string name="nothing">nothing</string>
-    <string name="eldery">eldery</string>
-    <string name="blind">blind</string>
-    <string name="deaf">deaf</string>
+    <string name="nothing">Nothing</string>
+    <string name="eldery">Eldery</string>
+    <string name="blind">Blind</string>
+    <string name="deaf">Deaf</string>
 
 </resources>

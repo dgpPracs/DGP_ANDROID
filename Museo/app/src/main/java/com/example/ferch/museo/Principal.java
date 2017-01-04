@@ -9,11 +9,15 @@ public class Principal extends BasicActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        //super.setLanguage();
         super.onCreate(savedInstanceState);
-
         super.añadirBarra(R.layout.activity_principal);
-
         this.firstRun();
+
+        sharedPreferences = getSharedPreferences("VALUES",MODE_PRIVATE);
+        int lang = sharedPreferences.getInt("LANG",2);
+        showMessage(lang+"");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         Button btn1 = (Button)findViewById(R.id.btn1);

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
@@ -31,8 +32,8 @@ public class FirstSettings extends BasicActivity {
     // String array to be shown on textSwitcher
 
     //CharSequence spanish = getResources().getString(R.string.spanish);
-    CharSequence languages[] = { "Español", "English",
-            "Alemán", "Francés", "Italiano" };
+    CharSequence languages[] = { "", "",
+            "", "","" };
     // Total length of the string array
     int cantLanguages = languages.length;
     // to keep current Index of text
@@ -40,8 +41,8 @@ public class FirstSettings extends BasicActivity {
 
     // ********** LANGUAGES ***********
     // String array to be shown on textSwitcher
-    String features[] = { "Ninguna", "Discapacidad Visual",
-            "Discapacidad auditiva", "Adulto mayor"};
+    CharSequence features[] = { "", "",
+            "", ""};
     // Total length of the string array
     int cantFeatures = features.length;
     // to keep current Index of text
@@ -52,7 +53,6 @@ public class FirstSettings extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_settings);
-        showMessage(getResources().getString(R.string.spanish));
 
         // Call all the methods
         init();
@@ -61,8 +61,33 @@ public class FirstSettings extends BasicActivity {
         setFactory(swchLanguage);
         setFactory(swchFeatures);
         setListener();
+
+        //metodos para meter los idiomas dentro de cada campo y que lo ponga en el idioma correspondiente
+        languages = this.setLangs(languages);
+        features = this.setFeats(features);
         swchLanguage.setText(languages[0]);
         swchFeatures.setText(features[0]);
+    }
+
+    CharSequence[] setLangs(CharSequence languages[]){
+
+        languages[0] = getString(R.string.french);
+        languages[1] = getString(R.string.german);
+        languages[2] = getString(R.string.italian);
+        languages[3] = getString(R.string.english);
+        languages[4] = getString(R.string.spanish);
+
+        return languages;
+    }
+
+    CharSequence[] setFeats(CharSequence feats[]){
+
+        feats[0] = getString(R.string.nothing);
+        feats[1] = getString(R.string.eldery);
+        feats[2] = getString(R.string.blind);
+        feats[3] = getString(R.string.deaf);
+
+        return feats;
     }
 
 
@@ -149,10 +174,40 @@ public class FirstSettings extends BasicActivity {
             @Override
             public void onClick(View view) {
 
+                //selectLang(currentIndexLang);
                 Intent btnIntent = new Intent (FirstSettings.this, WaitingActivity.class);
                 startActivity(btnIntent);
             }
         });
+    }
+
+    void selectLang(int lang){
+
+        switch (lang){
+
+            case 0:
+                this.saveLang(0);//frances
+            break;
+            case 1:
+                this.saveLang(1);//aleman
+            break;
+            case 2:
+                this.saveLang(2);//italiano
+            break;
+            case 3:
+                this.saveLang(3);//ingles
+            break;
+            case 4:
+                this.saveLang(4);//español
+            break;
+        }
+    }
+
+    void saveLang(int lang){
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("LANG",lang);
+        editor.apply();
     }
 
     // Set Factory for the textSwitcher *Compulsory part
