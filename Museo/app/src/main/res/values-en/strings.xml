@@ -32,6 +32,7 @@
     <string name="french">French</string>
     <string name="german">German</string>
     <string name="italian">Italian</string>
+    <string name="btnGo">Go</string>
 
     <!-- string eleccion de caracteristicas-->
     <string name="nothing">Nothing</string>

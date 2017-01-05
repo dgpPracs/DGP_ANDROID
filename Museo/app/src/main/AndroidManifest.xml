@@ -29,7 +29,8 @@
             android:parentActivityName=".BasicActivity"
             android:theme="@style/AppTheme" />
         <activity android:name=".FirstSettings" />
-        <activity android:name=".ZoneActivity"></activity>
+        <activity android:name=".ZoneActivity" />
+        <activity android:name=".ZoneRecycler"></activity>
     </application>
 
 </manifest>
