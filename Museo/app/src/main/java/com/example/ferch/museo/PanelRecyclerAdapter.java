@@ -1,6 +1,8 @@
 package com.example.ferch.museo;
 
+import android.app.Application;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.widget.CardView;
@@ -12,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import java.net.URI;
 import java.util.List;
 
 /**
@@ -56,12 +59,15 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
 
     @Override
     public void onBindViewHolder(PanelRecyclerAdapter.MultimediaViewHolder multimediaViewHolder, int i) {
-        Uri path = Uri.parse("android.resource://com.example.ferch.museo/" + R.raw.video_gestual);
+        //Uri path = Uri.parse( "android.resource://"+ BuildConfig.APPLICATION_ID+"/"+R.raw.video_gestual);
         //Uri path = Uri.parse(R.raw.video_gestual));
-        multimediaViewHolder.video.setVideoURI(path);
-        multimediaViewHolder.video.start();
+        multimediaViewHolder.video.setVideoURI(multimediaList.get(i).multimediaUri);
+        //multimediaViewHolder.video.setVideoPath("android.resource://"+ BuildConfig.APPLICATION_ID+"/"+R.raw.prueba);
+        //multimediaViewHolder.video.start();
         multimediaViewHolder.currentMult = multimediaList.get(i);
     }
+
+
 
     @Override
     public int getItemCount() {

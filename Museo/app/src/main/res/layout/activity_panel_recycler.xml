@@ -32,8 +32,7 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/sub_title"
@@ -41,8 +40,7 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/darker_gray"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/description"
@@ -50,8 +48,13 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/darker_gray"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
+
+        <VideoView
+            android:id="@+id/videoPrueba"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

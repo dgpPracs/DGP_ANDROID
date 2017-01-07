@@ -22,10 +22,10 @@ public class ZoneActivity extends BasicActivity {
         video =(VideoView)findViewById(R.id.video_multimedia);
         //de forma alternativa si queremos un streaming usar
         //mVideoView.setVideoURI(Uri.parse(URLstring));
-        Uri path = Uri.parse("android.resource://com.example.ferch.museo/" + R.raw.video_gestual);
+        //Uri path = Uri.parse("android.resource://com.example.ferch.museo/" + R.raw.test);
         //Uri path = Uri.parse(R.raw.video_gestual));
-        video.setVideoURI(path);
-        video.start();
+        //video.setVideoURI(path);
+        //video.start();
     }
 
 
