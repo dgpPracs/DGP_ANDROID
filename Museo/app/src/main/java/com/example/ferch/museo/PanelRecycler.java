@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -48,19 +49,10 @@ public class PanelRecycler extends BasicActivity {
         subtitle.setText("Sub Título del Panel");
         description.setText("Description 11..... \n Me mueeeroooo :( \n criii .. :(");
         multimediaList = new ArrayList<MultimediaContent>();
-        //Uri path = Uri.parse( "android.resource://"+ getResources().getResourcePackageName(R.raw.test));
-        //multimediaList.add(new MultimediaContent(path));
-        //multimediaList.add(new MultimediaContent(R.raw.video_gestual));
+        multimediaList.add(new MultimediaContent("android.resource://"+getPackageName()+"/"+R.raw.shortvideo, "video"));
+        multimediaList.add(new MultimediaContent("android.resource://"+getPackageName()+"/"+R.raw.test_song, "audio"));
     }
 
-    public void videoPlay(View v){
-        VideoView video;
-        String path = "android.resource://com.example.ferch.museo/"+R.raw.test;
-        Uri uri = Uri.parse(path);
-        video = (VideoView) findViewById(R.id.videoPrueba);
-        video.setVideoURI(uri);
-        video.start();
-    }
 
     private void initializeAdapter(){
         PanelRecyclerAdapter adapter = new PanelRecyclerAdapter(multimediaList);

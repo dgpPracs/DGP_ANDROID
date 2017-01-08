@@ -11,8 +11,12 @@ import java.net.URI;
 public class MultimediaContent {
 
     Uri multimediaUri;
-    MultimediaContent(Uri multimediaID) {
-        this.multimediaUri = multimediaUri;
+    String type;
+
+    MultimediaContent(String multimediaPath, String type) {
+        Uri uri = Uri.parse(multimediaPath);
+        this.multimediaUri = uri;
+        this.type=type;
     }
 
 }

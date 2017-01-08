@@ -114,9 +114,9 @@
                 <VideoView
                     android:id="@+id/video_multimedia"
                     android:maxHeight="150dp"
-                    android:maxWidth="200dp"
-                    android:layout_width="0dp"
-                    android:layout_height="150dp"
+                    android:maxWidth="800dp"
+                    android:layout_width="800dp"
+                    android:layout_height="200dp"
                     android:layout_weight="1"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"

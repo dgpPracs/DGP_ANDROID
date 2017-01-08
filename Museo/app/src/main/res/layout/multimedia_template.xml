@@ -3,6 +3,7 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/multimediaCV"
@@ -15,21 +16,20 @@
     app:cardBackgroundColor="@color/colorBlanco">
 
     <LinearLayout
+        android:id="@+id/multimedia_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_margin="10dp"
         android:orientation="horizontal"
         android:background="@color/colorBlanco"
         >
 
         <VideoView
-            android:maxHeight="150dp"
+            android:maxHeight="200dp"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="match_parent"
             android:id="@+id/video_multimedia"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            />
+            android:layout_alignParentTop="true" />
 
     </LinearLayout>
 
