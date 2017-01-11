@@ -24,14 +24,15 @@
 
         <ImageView
             android:maxHeight="150dp"
-            android:maxWidth="200dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_weight="1"
             android:id="@+id/panel_image"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:src="@mipmap/ic_waiting_sensor"
+            android:layout_marginRight="5dp"
             />
 
         <LinearLayout

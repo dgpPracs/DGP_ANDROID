@@ -31,9 +31,9 @@ public class ZoneRecycler extends BasicActivity {
 
     private void initializeData(){
         panels = new ArrayList<>();
-        panels.add(new Panel("Lavery Maiss", "25 years old", R.drawable.ic_signal));
-        panels.add(new Panel("Emma Wilson", "23 years old", R.drawable.ic_arrow_left));
-        panels.add(new Panel("Lillie Watts", "35 years old", R.drawable.ic_signal));
+        panels.add(new Panel("Inicio de la II Guerra Mundial", "Año 19XX", R.drawable.inicio_ii_guerra));
+        panels.add(new Panel("Bombas nucleares", "Hiroshima y Nagasaki", R.drawable.nagasaki_bomb));
+        panels.add(new Panel("Final de II Guerra Mundial", "19XX", R.drawable.end_world_war));
     }
 
     private void initializeAdapter(){

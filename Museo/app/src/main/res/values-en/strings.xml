@@ -40,4 +40,8 @@
     <string name="blind">Blind</string>
     <string name="deaf">Deaf</string>
 
+    <!-- Tarjetas multimedia-->
+    <string name="playAudio">Listen</string>
+    <string name="playVideo">Watch video</string>
+
 </resources>

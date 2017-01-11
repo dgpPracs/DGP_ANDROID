@@ -31,7 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/zone_rec_view"
-            android:background="@color/colorBlanco"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:background="@color/colorPrimaryLight"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             >

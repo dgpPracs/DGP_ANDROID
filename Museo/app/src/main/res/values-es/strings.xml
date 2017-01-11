@@ -41,4 +41,8 @@
     <string name="blind">Discapacidad visual</string>
     <string name="deaf">Discapacidad auditiva</string>
 
+    <!-- Tarjetas multimedia-->
+    <string name="playAudio">Escuchar</string>
+    <string name="playVideo">Ver video</string>
+
 </resources>

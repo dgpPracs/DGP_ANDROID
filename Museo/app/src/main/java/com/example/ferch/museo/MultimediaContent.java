@@ -12,11 +12,13 @@ public class MultimediaContent {
 
     Uri multimediaUri;
     String type;
+    String description;
 
-    MultimediaContent(String multimediaPath, String type) {
+    MultimediaContent(String multimediaPath, String type, String description) {
         Uri uri = Uri.parse(multimediaPath);
         this.multimediaUri = uri;
         this.type=type;
+        this.description = description;
     }
 
 }
