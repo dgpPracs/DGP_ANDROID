@@ -1,8 +1,11 @@
 package com.example.ferch.museo;
 
+import android.app.Activity;
 import android.app.Application;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
@@ -11,9 +14,12 @@ import android.provider.MediaStore;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -27,6 +33,7 @@ import java.util.List;
 import java.util.*;
 
 import static android.R.attr.button;
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 import static android.os.Build.VERSION_CODES.M;
 
 /**
@@ -45,6 +52,7 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
         TextView multDescription;
         TextView multLenght;
         Button btnPlay;
+
         //LinearLayout multimediaLayout;
 //        ViewGroup.LayoutParams params;
 
@@ -64,6 +72,7 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
     }
 
     List<MultimediaContent> multimediaList;
+    String multimediaPath;
     String type;
 
     PanelRecyclerAdapter(List<MultimediaContent> multimediaList){
@@ -83,8 +92,9 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
     }
 
     @Override
-    public void onBindViewHolder(PanelRecyclerAdapter.MultimediaViewHolder multimediaViewHolder, int i) {
+    public void onBindViewHolder(final PanelRecyclerAdapter.MultimediaViewHolder multimediaViewHolder, int i) {
         this.type=multimediaList.get(i).type;
+        View view = multimediaViewHolder.v;
         if(type=="audio"){
             multimediaViewHolder.multImage.setImageResource(R.drawable.audio_icon);
 //            multimediaViewHolder.btnPlay.setText(R.string.playAudio);
@@ -101,11 +111,40 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
 //            setVideo(multimediaViewHolder, i);
         }
         multimediaViewHolder.multDescription.setText(multimediaList.get(i).description);
-        MediaPlayer mediaPlayer = MediaPlayer.create(multimediaViewHolder.v.getContext(), multimediaList.get(i).multimediaUri);
+        MediaPlayer mediaPlayer = MediaPlayer.create(view.getContext(), multimediaList.get(i).multimediaUri);
         String duration = milliSecondsToTimer(mediaPlayer.getDuration());
         multimediaViewHolder.multLenght.setText( duration );
         multimediaViewHolder.currentMult = multimediaList.get(i);
+        final MultimediaContent currentMultimedia = multimediaList.get(i);
+        multimediaPath = multimediaList.get(i).multimediaPath;
+        multimediaViewHolder.btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent btnIntent = new Intent(view.getContext(), VideoPlayer.class);
+                btnIntent.putExtra("path", currentMultimedia.multimediaPath+"");
+                btnIntent.putExtra("uri", currentMultimedia.multimediaUri+"");
+                btnIntent.putExtra("description", currentMultimedia.description+"");
+                view.getContext().startActivity(btnIntent);
+//                showVideoDialog(view, currentMultimedia.multimediaPath);
+            }
+        });
     }
+
+//    void showVideoDialog(View view, String multimediaPath){
+//        final Dialog dialog = new Dialog(view.getContext());// add here your class name
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        dialog.setContentView(R.layout.multimedia_player);//add your own xml with defied with and height of videoview
+//        dialog.show();
+//        WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
+//                LinearLayoutCompat.LayoutParams.WRAP_CONTENT, LinearLayoutCompat.LayoutParams.WRAP_CONTENT);
+//        lp.copyFrom(dialog.getWindow().getAttributes());
+//        dialog.getWindow().setAttributes(lp);
+////        ( (Activity) view.getContext()).getWindow().setFormat(PixelFormat.TRANSLUCENT);
+//        Log.v("Video-URI", multimediaPath+ "");
+//        final VideoView videoPlayer = (VideoView) dialog.findViewById(R.id.video_player);
+//        videoPlayer.setVideoURI(Uri.parse(multimediaPath));
+//        videoPlayer.start();
+//    }
 
     /*public void setVideo(PanelRecyclerAdapter.MultimediaViewHolder multimediaViewHolder, int i){
         multimediaViewHolder.video.setVideoURI(multimediaList.get(i).multimediaUri);

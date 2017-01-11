@@ -31,7 +31,8 @@
         <activity android:name=".FirstSettings" />
         <activity android:name=".ZoneActivity" />
         <activity android:name=".ZoneRecycler" />
-        <activity android:name=".PanelRecycler"></activity>
+        <activity android:name=".PanelRecycler" />
+        <activity android:name=".VideoPlayer"></activity>
     </application>
 
 </manifest>
