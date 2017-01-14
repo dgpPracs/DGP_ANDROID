@@ -33,7 +33,7 @@ public class PanelRecycler extends BasicActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_panel_recycler);
 
-        super.añadirBarra(R.layout.activity_panel_recycler);
+        super.añadirBarra(R.layout.activity_panel_recycler, "Evento 1");
 
         rv=(RecyclerView)findViewById(R.id.panel_rec_view);
         title=(TextView) findViewById(R.id.title);

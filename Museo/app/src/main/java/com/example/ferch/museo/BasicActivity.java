@@ -23,16 +23,12 @@ public class BasicActivity extends AppCompatActivity implements NavigationView.O
 
     protected SharedPreferences sharedPreferences;
 
-    protected void añadirBarra(int actualLayout){
-
+    protected void añadirBarra(int actualLayout, String title){
         setContentView(actualLayout);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        this.setTitle();
+        this.setTitle(title);
     }
 
     @Override
@@ -84,13 +80,13 @@ public class BasicActivity extends AppCompatActivity implements NavigationView.O
         //mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    protected void setTitle(){
+    protected void setTitle(String title){
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         TextView textView = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        textView.setText(R.string.fgc_bar);
+        textView.setText(title);
     }
 
     protected void showMessage(String string){

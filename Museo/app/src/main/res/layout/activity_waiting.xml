@@ -11,10 +11,11 @@
     tools:context="com.example.ferch.museo.WaitingActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/nav_view"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryLight">
 
         <include
             layout="@layout/app_bar_principal"
@@ -24,45 +25,56 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_below="@+id/include3"
             android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true">
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryLight">
 
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:id="@+id/waiting_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/waiting_message"
-                android:layout_weight="1"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorPrimaryDark"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textAlignment="center"
-                android:textSize="20sp" />
+                android:textSize="24dp"
+                android:layout_margin="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryLight" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:id="@+id/symbol_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waiting_message"
                 android:text="@string/waiting_icon_desc"
-                android:layout_weight="1"
                 android:textColor="?android:attr/textColorTertiaryInverse"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:layout_margin="25dp"
+                android:textSize="22dp"
+                android:background="@color/colorPrimaryLight"/>
 
             <ImageView
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_marginBottom="20dp"
-                android:src="@mipmap/ic_waiting_signal"
-                />
+                android:id="@+id/waiting_icon"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:src="@drawable/ic_signal_2"
+                android:foregroundGravity="center_horizontal"
+                android:layout_below="@+id/symbol_description"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryLight"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                style="@style/Base.CardView" />
 
-        </LinearLayout>
+        </RelativeLayout>
     </RelativeLayout>
 
 

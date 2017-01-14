@@ -17,7 +17,7 @@ public class ZoneRecycler extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zone_recycler);
-        super.añadirBarra(R.layout.activity_zone_recycler);
+        super.añadirBarra(R.layout.activity_zone_recycler, "ZONA 1");
 
         rv=(RecyclerView)findViewById(R.id.zone_rec_view);
 

@@ -14,7 +14,7 @@ import android.content.ClipData.Item;
 import java.util.List;
 
 import static com.example.ferch.museo.R.id.activity_basic;
-import static com.example.ferch.museo.R.id.btn1;
+//import static com.example.ferch.museo.R.id.btn1;
 import static com.example.ferch.museo.R.id.panelCV;
 
 /**
