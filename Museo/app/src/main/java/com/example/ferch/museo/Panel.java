@@ -10,12 +10,18 @@ public class Panel {
 
     String title;
     String subTitle;
+    String description;
     int imageId;
+    int zoneId;
+    int panelId;
 
-    Panel(String title, String subTitle, int imageId) {
+    Panel(String title, String subTitle, String description, int imageId, int zoneId, int panelId) {
         this.title = title;
         this.subTitle = subTitle;
+        this.description = description;
         this.imageId = imageId;
+        this.zoneId = zoneId;
+        this.panelId = panelId;
     }
 
 }

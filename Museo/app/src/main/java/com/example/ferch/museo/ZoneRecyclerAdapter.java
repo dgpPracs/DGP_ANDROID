@@ -43,6 +43,12 @@ public class ZoneRecyclerAdapter extends RecyclerView.Adapter<ZoneRecyclerAdapte
                 @Override
                 public void onClick(View view) {
                     Intent btnIntent = new Intent(v.getContext(), PanelRecycler.class);
+                    btnIntent.putExtra("zoneId", currentPanel.zoneId);
+                    btnIntent.putExtra("panelId", currentPanel.panelId);
+                    btnIntent.putExtra("title", currentPanel.title);
+                    btnIntent.putExtra("subTitle", currentPanel.subTitle);
+                    btnIntent.putExtra("description", currentPanel.description);
+                    btnIntent.putExtra("imageId", currentPanel.imageId);
                     v.getContext().startActivity(btnIntent);
                 }
             });

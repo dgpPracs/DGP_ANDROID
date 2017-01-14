@@ -40,4 +40,23 @@
     <string name="blind"></string>
     <string name="deaf"></string>
 
+    <!--TÍTULO DE LAS ZONAS-->
+    <string name="zone1">60s</string>
+    <string name="zone2">90s</string>
+    <string name="zone3">New millennium: 2000</string>
+
+    <!--CONTENIDO PANELES-->
+    <string name="title1_1">Il trattore modernizza il campo</string>
+    <string name="subtitle1_1">La meccanizzazione dell'agricoltura è diffusa e il trattore è il suo principale simbolo</string>
+    <string name="description1_1">Con la liberalizzazione economica avviata negli anni '50, l'agricoltura andaluso subisce una grande trasformazione: fitodepurazione nei bacini del Guadiana e Guadalquivir mettere le bajoandaluzas campi irrigati, permettendo colture più redditizie su grandi proprietà. aumenti salariali causati dall'emigrazione causa accelerato meccanizzazione nei primi anni degli anni '60.</string>
+    <string name="title1_2">Fondazione delle Unioni degli studenti democratici</string>
+    <string name="subtitle1_2">Presso le Università di Granada e Siviglia</string>
+    <string name="description1_2">Un movimento studentesco organizzato nei cladestine Associazioni studentesche democratica presso le Università di Granada e Siviglia turnn università Adalusian in uno dei pochi posti liberi del tempo. Molti futuri leader politici andalusi della transizione democratica w ere forgiato nei suoi ranghi e in quelli di movimento operaio.</string>
+    <string name="title2_1">Expo 92 una realtà emozionante</string>
+    <string name="subtitle2_1">Andalusia in l'occhio del mondo</string>
+    <string name="description2_1">L'Esposizione Universale od Siviglia, l'inaugurazione del treno ad alta velocità AVE e la costruzione dell'autostrada A-92 simboleggiano nuova unità econonomic di Andalusia e la sua enormemente migliorata infraestructure.</string>
+    <string name="title3_1">La creazione e il lancio di diversi parchi commerciali ad alta tecnologia</string>
+    <string name="subtitle3_1"> Il rappresentano l'ingresso di Andalusia nella società della conoscenza</string>
+    <string name="description3_1"></string>
+
 </resources>

@@ -45,4 +45,23 @@
     <string name="playAudio">Escuchar</string>
     <string name="playVideo">Ver video</string>
 
+    <!--TÍTULO DE LAS ZONAS-->
+    <string name="zone1">Década del 60</string>
+    <string name="zone2">Década del 90</string>
+    <string name="zone3">Nuevo milenio: 2000</string>
+
+    <!--CONTENIDO PANELES-->
+    <string name="title1_1">El tractor moderniza el campo</string>
+    <string name="subtitle1_1">La mecanización de la agricultura se generaliza y el tractor es su principal símbolo</string>
+    <string name="description1_1">Con la liberación económica puesta en marcha en los años 50, la agricultura andaluza sufre una gran transformación: los pantanos construidos en las cuencas de Guadiana y Guadalquivir ponen en regadío las campiñas bajoandaluzas, permitiendo cultivos más rentables en las grandes propiedades. las subidas salariales provocadas por la emigración provocan una mecanización acelerada durante los primeros años de la década de los 60.</string>
+    <string name="title1_2">Fundación de los Sindicatos Democráticos de estudiantes</string>
+    <string name="subtitle1_2">Aparecen en las universidades de Granada y Sevilla</string>
+    <string name="description1_2">En las Universidades de Granada y Sevilla, un movimiento estudiantil organizado en los clandestinos Sindicatos Democráticos de Estudiantes convierte a las universidades andaluzas en uno de los escasos espacios de libertad de la época. En sus filas y en las del movimiento obrero se forjarían muchos de los líderes políticos andaluces de la Transición.</string>
+    <string name="title2_1">La Expo 92, una gozosa realidad</string>
+    <string name="subtitle2_1">Andalucía en el objetivo del mundo</string>
+    <string name="description2_1">La Exposición Universal de Sevilla, la inauguración del AVE y la contrucción de la autovía A-92 simbolizan el nuevo impulso económico de Andalucia, cuyas infraestructuras han mejorado extraordinariamente.</string>
+    <string name="title3_1">Creación y puesta en marcha de diversos parques tecnológicos</string>
+    <string name="subtitle3_1">Simboliza el ingreso de Andalucía en la Sociedad del Conocimiento</string>
+    <string name="description3_1"></string>
+
 </resources>

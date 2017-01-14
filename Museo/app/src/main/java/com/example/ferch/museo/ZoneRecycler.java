@@ -8,16 +8,22 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.R.attr.path;
+
 public class ZoneRecycler extends BasicActivity {
 
     private List<Panel> panels;
     private RecyclerView rv;
+    private String zoneTitle;
+    private String zoneIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zone_recycler);
-        super.añadirBarra(R.layout.activity_zone_recycler, "ZONA 1");
+        zoneTitle = getIntent().getExtras().getString("zone");
+        zoneIndex = getIntent().getExtras().getString("index");
+        super.añadirBarra(R.layout.activity_zone_recycler, zoneTitle);
 
         rv=(RecyclerView)findViewById(R.id.zone_rec_view);
 
@@ -31,9 +37,20 @@ public class ZoneRecycler extends BasicActivity {
 
     private void initializeData(){
         panels = new ArrayList<>();
-        panels.add(new Panel("Inicio de la II Guerra Mundial", "Año 19XX", R.drawable.inicio_ii_guerra));
-        panels.add(new Panel("Bombas nucleares", "Hiroshima y Nagasaki", R.drawable.nagasaki_bomb));
-        panels.add(new Panel("Final de II Guerra Mundial", "19XX", R.drawable.end_world_war));
+        switch (zoneIndex){
+            case "1":
+                panels.add(new Panel(getResources().getString(R.string.title1_1), getResources().getString(R.string.subtitle1_1), getResources().getString(R.string.description1_1), R.drawable.inicio_ii_guerra, 1, 1));
+                panels.add(new Panel(getResources().getString(R.string.title1_2), getResources().getString(R.string.subtitle1_2), getResources().getString(R.string.description1_2),R.drawable.inicio_ii_guerra, 1, 2));
+                break;
+            case "2":
+                panels.add(new Panel(getResources().getString(R.string.title2_1), getResources().getString(R.string.subtitle2_1), getResources().getString(R.string.description2_1), R.drawable.inicio_ii_guerra, 2, 1));
+                break;
+            case "3":
+                panels.add(new Panel(getResources().getString(R.string.title3_1), getResources().getString(R.string.subtitle3_1), getResources().getString(R.string.description3_1), R.drawable.inicio_ii_guerra, 3, 1));
+                break;
+            default:
+                break;
+        }
     }
 
     private void initializeAdapter(){
