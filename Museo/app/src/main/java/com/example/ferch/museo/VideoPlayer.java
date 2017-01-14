@@ -29,21 +29,22 @@ public class VideoPlayer extends AppCompatActivity {
         video = (VideoView) findViewById(R.id.video_player);
         video.setZOrderOnTop(true);
         video.setVideoURI(uri);
-        MediaController mc = new MediaController(this.getApplicationContext()) {
-            @Override
-            public void hide() {
-                this.show();
-                this.show(0);
-            }
-            @Override
-            public void setMediaPlayer(MediaPlayerControl player) {
-                super.setMediaPlayer(player);
-                this.show();
-                this.show(0);
-            }
-        };
+//        MediaController mc = new MediaController(this.getApplicationContext()) {
+//            @Override
+//            public void hide() {
+//                this.show();
+//                this.show(0);
+//            }
+//            @Override
+//            public void setMediaPlayer(MediaPlayerControl player) {
+//                super.setMediaPlayer(player);
+//                this.show();
+//                this.show(0);
+//            }
+//        };
+        MediaController mc = new MediaController(this);
         video.setMediaController(mc);
-        video.requestFocus();
+        //video.requestFocus();
         video.start();
 
     }

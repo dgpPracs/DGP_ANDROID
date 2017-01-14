@@ -120,11 +120,17 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
         multimediaViewHolder.btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnIntent = new Intent(view.getContext(), VideoPlayer.class);
-                btnIntent.putExtra("path", currentMultimedia.multimediaPath+"");
-                btnIntent.putExtra("uri", currentMultimedia.multimediaUri+"");
-                btnIntent.putExtra("description", currentMultimedia.description+"");
-                view.getContext().startActivity(btnIntent);
+                if(currentMultimedia.type=="video"){
+                    Intent btnIntent = new Intent(view.getContext(), VideoPlayer.class);
+                    btnIntent.putExtra("path", currentMultimedia.multimediaPath+"");
+                    btnIntent.putExtra("uri", currentMultimedia.multimediaUri+"");
+                    btnIntent.putExtra("description", currentMultimedia.description+"");
+                    view.getContext().startActivity(btnIntent);
+                }else{
+                    // Aquí iría el reproductor de audio, ya que como no es video solo aparecería el botón Play/stop y la barra de seguimiento.
+                    // Y no creo que deba ser en otra activity, sino que o bien sería flotante, o bien justo debajo del título del audio y su duración.
+                    // Lo que implica que desaparecería el botón escuchar y se reemplazaría por el botón play/stop y la barra de seguimiento.
+                }
 //                showVideoDialog(view, currentMultimedia.multimediaPath);
             }
         });
