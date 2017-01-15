@@ -42,6 +42,8 @@ import static android.os.Build.VERSION_CODES.M;
 
 public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdapter.MultimediaViewHolder> {
 
+    private MediaPlayer mMediaPlayer;
+
     public static class MultimediaViewHolder extends RecyclerView.ViewHolder {
 
         CardView panelCV;
@@ -52,6 +54,9 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
         TextView multDescription;
         TextView multLenght;
         Button btnPlay;
+        Button btnPause;
+
+
 
         //LinearLayout multimediaLayout;
 //        ViewGroup.LayoutParams params;
@@ -64,6 +69,8 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
             multDescription = (TextView)itemView.findViewById(R.id.multimedia_description);
             multLenght = (TextView)itemView.findViewById(R.id.multimedia_lenght);
             btnPlay = (Button) itemView.findViewById(R.id.btnPlay);
+            btnPause = (Button) itemView.findViewById(R.id.btnPause);
+            btnPause.setVisibility(itemView.GONE);
 //            video = (VideoView)itemView.findViewById(R.id.video_multimedia);
 //            multimediaLayout = (LinearLayout) itemView.findViewById(R.id.multimedia_layout);
 //            params = multimediaLayout.getLayoutParams();
@@ -99,6 +106,7 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
             multimediaViewHolder.multImage.setImageResource(R.drawable.audio_icon);
 //            multimediaViewHolder.btnPlay.setText(R.string.playAudio);
             multimediaViewHolder.btnPlay.setText("Escuchar");
+            multimediaViewHolder.btnPause.setText("Pausar");
 //            multimediaViewHolder.params.height = 100;
 //            multimediaViewHolder.multimediaLayout.setLayoutParams(multimediaViewHolder.params);
 //            setVideo(multimediaViewHolder, i);
@@ -127,11 +135,32 @@ public class PanelRecyclerAdapter extends RecyclerView.Adapter<PanelRecyclerAdap
                     btnIntent.putExtra("description", currentMultimedia.description+"");
                     view.getContext().startActivity(btnIntent);
                 }else{
+                    mMediaPlayer = MediaPlayer.create(view.getContext(), R.raw.pruebasonido);
+                    mMediaPlayer.setLooping(true);
+                    mMediaPlayer.setVolume(100, 100);
+                    mMediaPlayer.start();
+
+                    multimediaViewHolder.btnPause.setVisibility(view.VISIBLE);
+                    multimediaViewHolder.btnPlay.setVisibility(view.GONE);
                     // Aquí iría el reproductor de audio, ya que como no es video solo aparecería el botón Play/stop y la barra de seguimiento.
                     // Y no creo que deba ser en otra activity, sino que o bien sería flotante, o bien justo debajo del título del audio y su duración.
                     // Lo que implica que desaparecería el botón escuchar y se reemplazaría por el botón play/stop y la barra de seguimiento.
                 }
 //                showVideoDialog(view, currentMultimedia.multimediaPath);
+            }
+        });
+
+        multimediaViewHolder.btnPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //mMediaPlayer = MediaPlayer.create(view.getContext(), R.raw.test_song);
+                //mMediaPlayer.setLooping(true);
+                //mMediaPlayer.setVolume(100, 100);
+                mMediaPlayer.pause();
+                multimediaViewHolder.btnPause.setVisibility(view.GONE);
+                multimediaViewHolder.btnPlay.setVisibility(view.VISIBLE);
+
             }
         });
     }

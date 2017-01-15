@@ -25,7 +25,7 @@ public class WaitingActivity extends BasicActivity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waiting);
-        super.añadirBarra(R.layout.activity_waiting, "MUSEO CAJA GRANADA");
+        super.añadirBarra(R.layout.activity_waiting, "MCG");
 
         signalIcon  = (ImageView) findViewById(R.id.waiting_icon);
         text1 = (TextView) findViewById(R.id.waiting_message);

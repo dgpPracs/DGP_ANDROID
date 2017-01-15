@@ -58,8 +58,9 @@ public class BasicActivity extends AppCompatActivity implements NavigationView.O
             case android.R.id.home:
                 finish();
                 return true;
-            case R.id.action_settings:
-                this.showMessage("hola");
+            case R.id.action_setting:
+                Intent btnIntent = new Intent (this, FirstSettings.class);
+                startActivity(btnIntent);
                 return true;
         }
 

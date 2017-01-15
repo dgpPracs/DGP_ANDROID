@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:id="@+id/multimedia_layout"
-        android:layout_height="80dp"
+        android:layout_height="fill_parent"
         android:layout_margin="10dp"
         android:orientation="horizontal"
         android:background="@color/colorBlanco"
@@ -38,7 +38,7 @@
             android:maxWidth="80dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:id="@+id/multimedia_image"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -48,7 +48,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="2"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -79,6 +79,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnPlay"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlanco"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPause"
                     android:textAlignment="center"
                     android:textColor="@color/colorBlanco"
                     android:backgroundTint="@color/colorPrimaryDark"
