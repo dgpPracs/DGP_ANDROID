@@ -39,14 +39,14 @@ public class ZoneRecycler extends BasicActivity {
         panels = new ArrayList<>();
         switch (zoneIndex){
             case "1":
-                panels.add(new Panel(getResources().getString(R.string.title1_1), getResources().getString(R.string.subtitle1_1), getResources().getString(R.string.description1_1), R.drawable.inicio_ii_guerra, 1, 1));
-                panels.add(new Panel(getResources().getString(R.string.title1_2), getResources().getString(R.string.subtitle1_2), getResources().getString(R.string.description1_2),R.drawable.inicio_ii_guerra, 1, 2));
+                panels.add(new Panel(getResources().getString(R.string.title1_1), getResources().getString(R.string.subtitle1_1), getResources().getString(R.string.description1_1), R.drawable.img_1_1, 1, 1));
+                panels.add(new Panel(getResources().getString(R.string.title1_2), getResources().getString(R.string.subtitle1_2), getResources().getString(R.string.description1_2),R.drawable.img_1_2, 1, 2));
                 break;
             case "2":
-                panels.add(new Panel(getResources().getString(R.string.title2_1), getResources().getString(R.string.subtitle2_1), getResources().getString(R.string.description2_1), R.drawable.inicio_ii_guerra, 2, 1));
+                panels.add(new Panel(getResources().getString(R.string.title2_1), getResources().getString(R.string.subtitle2_1), getResources().getString(R.string.description2_1), R.drawable.img_2_1, 2, 1));
                 break;
             case "3":
-                panels.add(new Panel(getResources().getString(R.string.title3_1), getResources().getString(R.string.subtitle3_1), getResources().getString(R.string.description3_1), R.drawable.inicio_ii_guerra, 3, 1));
+                panels.add(new Panel(getResources().getString(R.string.title3_1), getResources().getString(R.string.subtitle3_1), getResources().getString(R.string.description3_1), R.drawable.img_3_1, 3, 1));
                 break;
             default:
                 break;

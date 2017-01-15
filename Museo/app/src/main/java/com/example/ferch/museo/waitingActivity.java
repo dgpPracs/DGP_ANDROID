@@ -2,6 +2,7 @@ package com.example.ferch.museo;
 
 import android.content.Intent;
 import android.media.Image;
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +28,8 @@ public class WaitingActivity extends BasicActivity {
         super.añadirBarra(R.layout.activity_waiting, "MUSEO CAJA GRANADA");
 
         signalIcon  = (ImageView) findViewById(R.id.waiting_icon);
+        text1 = (TextView) findViewById(R.id.waiting_message);
+        text2 = (TextView) findViewById(R.id.symbol_description);
 
         setListeners();
 
@@ -38,18 +41,24 @@ public class WaitingActivity extends BasicActivity {
         signalIcon.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent btnIntent = new Intent (WaitingActivity.this, ZoneRecycler.class);
+                btnIntent.putExtra("zone", getResources().getString(R.string.zone1));
+                btnIntent.putExtra("index", "1");
                 startActivity(btnIntent);
             }
         });
         text1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent btnIntent = new Intent (WaitingActivity.this, ZoneRecycler.class);
+                btnIntent.putExtra("zone", getResources().getString(R.string.zone2));
+                btnIntent.putExtra("index", "2");
                 startActivity(btnIntent);
             }
         });
         text2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent btnIntent = new Intent (WaitingActivity.this, ZoneRecycler.class);
+                btnIntent.putExtra("zone", getResources().getString(R.string.zone3));
+                btnIntent.putExtra("index", "3");
                 startActivity(btnIntent);
             }
         });
