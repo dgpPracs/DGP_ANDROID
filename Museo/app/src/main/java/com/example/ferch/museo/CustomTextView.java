@@ -12,6 +12,6 @@ import android.widget.TextView;
 public class CustomTextView extends TextView {
     public CustomTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.setTypeface(Typeface.createFromAsset(context.getAssets(), "Prezident.ttf"));
+        this.setTypeface(Typeface.createFromAsset(context.getAssets(), "roboto-regular.ttf"));
     }
 }
